@@ -72,6 +72,50 @@
       <p class="small"><a href="privacy.html">Polityka prywatności</a> · <a href="terms.html">Warunki korzystania</a></p>
     </div>
   </footer>
-  <script src="assets/js/music.js?v=20260629c"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      const player = document.getElementById('music-player');
+      const currentTrack = document.getElementById('current-track');
+      const trackButtons = Array.from(document.querySelectorAll('.track-button'));
+      const siteRoot = window.location.pathname.indexOf('/ptprojects/') === 0 ? '/ptprojects/' : '/';
+
+      if (!player || !currentTrack || trackButtons.length === 0) {
+        return;
+      }
+
+      trackButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const source = button.getAttribute('data-src');
+          const title = button.getAttribute('data-title');
+
+          if (!source || !title) {
+            return;
+          }
+
+          const sourceUrl = new URL(siteRoot + source, window.location.origin).href;
+
+          if (player.src !== sourceUrl) {
+            player.pause();
+            player.src = sourceUrl;
+            player.setAttribute('aria-label', 'Odtwarzacz muzyki: ' + title);
+            player.load();
+          }
+
+          currentTrack.textContent = 'Wybrany utwór: ' + title + '.';
+
+          const playback = player.play();
+
+          if (playback && typeof playback.catch === 'function') {
+            playback.catch(function () {
+              currentTrack.textContent = 'Wybrany utwór: ' + title + '. Naciśnij przycisk odtwarzania w odtwarzaczu.';
+              player.focus();
+            });
+          }
+        });
+      });
+    }());
+  </script>
 </body>
 </html>
