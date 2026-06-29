@@ -1,15 +1,17 @@
 (function () {
   'use strict';
 
-  const players = Array.from(document.querySelectorAll('audio'));
+  document.addEventListener('play', function (event) {
+    const currentPlayer = event.target;
 
-  players.forEach((currentPlayer) => {
-    currentPlayer.addEventListener('play', () => {
-      players.forEach((otherPlayer) => {
-        if (otherPlayer !== currentPlayer && !otherPlayer.paused) {
-          otherPlayer.pause();
-        }
-      });
+    if (!(currentPlayer instanceof HTMLAudioElement)) {
+      return;
+    }
+
+    document.querySelectorAll('audio').forEach(function (otherPlayer) {
+      if (otherPlayer !== currentPlayer) {
+        otherPlayer.pause();
+      }
     });
-  });
+  }, true);
 }());
