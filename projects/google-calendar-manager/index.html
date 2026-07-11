@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Google Calendar Manager dla NVDA - PT Projects</title>
+  <meta name="description" content="Google Calendar Manager 1.0.2: dostępny dodatek do NVDA do odczytywania, wyszukiwania, dodawania, edycji i usuwania wydarzeń Kalendarza Google.">
+  <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="branding">
+        <a class="site-logo-link" href="../../index.html" aria-label="PT Projects — strona główna">
+          <img class="site-logo" src="../../assets/img/logo-pt-projects.png" alt="">
+        </a>
+        <p class="site-tagline">trochę projektów, coś o dostępności i nieco moich dźwięków</p>
+      </div>
+      <nav aria-label="Główne menu">
+        <ul>
+          <li><a href="../../index.html">Start</a></li>
+          <li><a href="../../about.html">O mnie</a></li>
+          <li><a href="../../projects.html" aria-current="page">Projekty</a></li>
+          <li><a href="../../posts/index.html">Wpisy</a></li>
+          <li><a href="../../music.html">Muzyka</a></li>
+          <li><a href="../../accessibility.html">Dostępność</a></li>
+          <li><a href="../../contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="content">
+      <article>
+        <h1>Google Calendar Manager dla NVDA</h1>
+        <p class="meta">Wersja 1.0.2 — publiczna wersja testowa przed pełnym wydaniem</p>
+
+        <section class="notice" aria-labelledby="test-status-heading">
+          <h2 id="test-status-heading">Ważna informacja o logowaniu Google</h2>
+          <p>Dodatek można pobrać i zainstalować publicznie. Logowanie Google działa obecnie tylko dla kont dodanych przeze mnie jako zatwierdzeni użytkownicy testowi OAuth.</p>
+          <p>Pełne publiczne logowanie będzie możliwe po zakończeniu weryfikacji aplikacji OAuth przez Google. Jeśli chcesz przetestować dodatek, napisz na adres <a href="mailto:piotrktarasewicz@gmail.com">piotrktarasewicz@gmail.com</a>.</p>
+        </section>
+
+        <section class="section" aria-labelledby="download-heading">
+          <h2 id="download-heading">Pobieranie</h2>
+          <p><a href="https://github.com/piotrktarasewicz/nvda-google-calendar-manager/releases/download/v1.0.2/googleCalendarManager-1.0.2.nvda-addon">Pobierz Google Calendar Manager 1.0.2</a></p>
+          <p>Plik ma rozszerzenie <code>.nvda-addon</code>. Po jego otwarciu NVDA zaproponuje instalację dodatku.</p>
+        </section>
+
+        <section class="section" aria-labelledby="what-it-does-heading">
+          <h2 id="what-it-does-heading">Do czego służy dodatek</h2>
+          <p>Google Calendar Manager pozwala korzystać z najważniejszych funkcji Kalendarza Google bez przechodzenia przez jego interfejs w przeglądarce. Dodatek jest obsługiwany z klawiatury i przekazuje informacje przez NVDA.</p>
+          <p>Nie zastępuje pełnej strony Kalendarza Google, ale ułatwia szybkie sprawdzanie planu, wyszukiwanie wydarzeń oraz wykonywanie podstawowych operacji.</p>
+        </section>
+
+        <section class="section" aria-labelledby="features-heading">
+          <h2 id="features-heading">Co potrafi</h2>
+          <ul>
+            <li>loguje użytkownika do Kalendarza Google przez przeglądarkę i informuje o stanie logowania,</li>
+            <li>pozwala wybrać kalendarze używane przez dodatek,</li>
+            <li>odczytuje wydarzenia na dziś i następne sześć dni,</li>
+            <li>pokazuje wydarzenia dla dowolnie wybranego dnia,</li>
+            <li>pozwala dodać wydarzenie bezpośrednio z okna wybranego dnia,</li>
+            <li>wyszukuje wydarzenia według tekstu w wybranym zakresie czasu,</li>
+            <li>dodaje nowe wydarzenia, także cykliczne,</li>
+            <li>edytuje istniejące wydarzenia,</li>
+            <li>usuwa jedno albo wiele zaznaczonych wydarzeń,</li>
+            <li>przy wydarzeniach cyklicznych pozwala wybrać jedno wystąpienie albo cały cykl,</li>
+            <li>obsługuje wydarzenia całodniowe i wielodniowe,</li>
+            <li>przełącza prosty i rozszerzony tryb odczytu,</li>
+            <li>ma komunikaty i okna po polsku oraz po angielsku.</li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="not-included-heading">
+          <h2 id="not-included-heading">Czego dodatek nie obsługuje</h2>
+          <p>Google Calendar Manager nie zarządza:</p>
+          <ul>
+            <li>uczestnikami spotkań,</li>
+            <li>linkami Google Meet,</li>
+            <li>dostępnością sal i uczestników,</li>
+            <li>wyszukiwaniem miejsc w Mapach Google,</li>
+            <li>załącznikami,</li>
+            <li>przypomnieniami kalendarza.</li>
+          </ul>
+          <p>Pole lokalizacji jest zwykłym polem tekstowym. Dodatek nie wyszukuje ani nie weryfikuje adresów.</p>
+        </section>
+
+        <section class="section" aria-labelledby="requirements-heading">
+          <h2 id="requirements-heading">Wymagania</h2>
+          <ul>
+            <li>Windows,</li>
+            <li>NVDA 2026.1 lub nowszy,</li>
+            <li>dostęp do Internetu,</li>
+            <li>konto Google z włączonym Kalendarzem Google.</li>
+          </ul>
+          <p>Osobna instalacja Pythona nie jest potrzebna. Dodatek korzysta ze środowiska Pythona dostarczanego przez NVDA i zawiera wymagane biblioteki.</p>
+        </section>
+
+        <section class="section" aria-labelledby="privacy-heading">
+          <h2 id="privacy-heading">Prywatność i uprawnienia</h2>
+          <p>Dodatek korzysta z OAuth 2.0 i Google Calendar API. Prosi o dostęp do wydarzeń, listy kalendarzy oraz ustawień Kalendarza Google, takich jak strefa czasowa. Nie prosi o możliwość tworzenia, usuwania, udostępniania ani zmieniania samych kalendarzy.</p>
+          <p>Token logowania, ustawienia i pomocnicze raporty błędów są przechowywane lokalnie w katalogu konfiguracji NVDA. Autor nie prowadzi własnego serwera ani bazy wydarzeń użytkowników.</p>
+          <p><a href="privacy.html">Przeczytaj politykę prywatności Google Calendar Manager</a>.</p>
+        </section>
+
+        <section class="section" aria-labelledby="license-heading">
+          <h2 id="license-heading">Licencja</h2>
+          <p>Google Calendar Manager jest wolnym oprogramowaniem udostępnianym na warunkach GNU General Public License w wersji 3 lub dowolnej późniejszej (<code>GPL-3.0-or-later</code>).</p>
+          <p>Pełny tekst licencji i kod źródłowy znajdują się w repozytorium projektu na GitHubie.</p>
+        </section>
+
+        <section class="section" aria-labelledby="project-links-heading">
+          <h2 id="project-links-heading">Linki</h2>
+          <ul>
+            <li><a href="https://github.com/piotrktarasewicz/nvda-google-calendar-manager" rel="noopener noreferrer">Repozytorium Google Calendar Manager na GitHubie</a></li>
+            <li><a href="https://github.com/piotrktarasewicz/nvda-google-calendar-manager/releases" rel="noopener noreferrer">Wydania dodatku na GitHubie</a></li>
+            <li><a href="https://github.com/piotrktarasewicz/nvda-google-calendar-manager/blob/main/README_pl.md" rel="noopener noreferrer">Pełny opis i instrukcja skrótów po polsku</a></li>
+            <li><a href="terms.html">Warunki korzystania z dodatku</a></li>
+            <li><a href="../../contact.html">Kontakt w sprawie dodatku</a></li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>PT Projects — Piotr Tarasewicz.</p>
+      <p class="small"><a href="../../privacy.html">Polityka prywatności strony</a> · <a href="../../terms.html">Warunki korzystania ze strony</a></p>
+    </div>
+  </footer>
+</body>
+</html>
