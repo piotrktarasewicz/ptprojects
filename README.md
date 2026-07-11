@@ -1,14 +1,16 @@
-﻿# PT Projects
+# PT Projects
 
-Osobne repozytorium strony `ptprojects.app`.
+Repozytorium publikacyjne strony `ptprojects.app`.
 
-To repo publikuje domenÄ™:
+Strona jest dostępna pod adresem:
 
 https://ptprojects.app
 
-Katalog `odkryj-womai/` zostaje tutaj jako katalog publikacyjny, ĹĽeby zachowaÄ‡ obecne adresy:
+Najważniejsze katalogi publikacyjne:
 
-https://ptprojects.app/odkryj-womai
-https://ptprojects.app/odkryj-womai/admin
+- `projects/google-calendar-manager/` — strona projektu Google Calendar Manager dla NVDA,
+- `projects/google-calendar-reader/` — przekierowanie ze starego adresu projektu,
+- `odkryj-womai/` — publiczna wersja aplikacji Odkryj WOMAI,
+- `mojedyzory/` — strony projektu Mojedyzory.
 
-ĹąrĂłdĹ‚owe repo aplikacji WOMAI powinno byÄ‡ prowadzone osobno w repozytorium `odkryj-womai`, a nastÄ™pnie publikowane do katalogu `odkryj-womai/` w tym repo.
+Źródłowe repozytoria poszczególnych aplikacji mogą być prowadzone osobno, a następnie publikowane do odpowiednich katalogów w tym repozytorium.
