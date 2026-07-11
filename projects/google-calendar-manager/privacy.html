@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polityka prywatności Google Calendar Manager - PT Projects</title>
+  <meta name="description" content="Polityka prywatności dodatku Google Calendar Manager dla NVDA, zakresy OAuth, dane lokalne i zasady korzystania z danych Kalendarza Google.">
+  <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="branding">
+        <a class="site-logo-link" href="../../index.html" aria-label="PT Projects — strona główna">
+          <img class="site-logo" src="../../assets/img/logo-pt-projects.png" alt="">
+        </a>
+        <p class="site-tagline">trochę projektów, coś o dostępności i nieco moich dźwięków</p>
+      </div>
+      <nav aria-label="Główne menu">
+        <ul>
+          <li><a href="../../index.html">Start</a></li>
+          <li><a href="../../about.html">O mnie</a></li>
+          <li><a href="../../projects.html" aria-current="page">Projekty</a></li>
+          <li><a href="../../posts/index.html">Wpisy</a></li>
+          <li><a href="../../music.html">Muzyka</a></li>
+          <li><a href="../../accessibility.html">Dostępność</a></li>
+          <li><a href="../../contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="content">
+      <article>
+        <h1>Polityka prywatności Google Calendar Manager</h1>
+        <p class="meta">Data obowiązywania: 11 lipca 2026 r.</p>
+        <p>Google Calendar Manager to dodatek do NVDA dla systemu Windows. Pozwala użytkownikowi odczytywać wybrane wydarzenia Kalendarza Google i zarządzać nimi z poziomu NVDA.</p>
+        <p>Ta polityka opisuje, w jaki sposób dodatek uzyskuje dostęp do danych użytkownika Google, jak ich używa, gdzie je przechowuje i czy je udostępnia.</p>
+
+        <section class="section" aria-labelledby="data-heading">
+          <h2 id="data-heading">Dane odczytywane z Kalendarza Google</h2>
+          <p>Zależnie od działań użytkownika dodatek może uzyskiwać dostęp do:</p>
+          <ul>
+            <li>wpisów listy kalendarzy, aby użytkownik mógł wybrać kalendarze używane przez dodatek,</li>
+            <li>ustawień Kalendarza Google, takich jak strefa czasowa,</li>
+            <li>danych wydarzeń w wybranych kalendarzach, w tym tytułów, dat, godzin, opisów, lokalizacji, informacji o cykliczności oraz identyfikatorów wydarzeń.</li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="oauth-heading">
+          <h2 id="oauth-heading">Używane zakresy OAuth</h2>
+          <p>Dodatek prosi o następujące zakresy Google Calendar API:</p>
+          <ul>
+            <li><code>https://www.googleapis.com/auth/calendar.events</code> — odczyt, dodawanie, edycja i usuwanie wydarzeń zgodnie z działaniami użytkownika,</li>
+            <li><code>https://www.googleapis.com/auth/calendar.calendarlist.readonly</code> — odczyt listy kalendarzy,</li>
+            <li><code>https://www.googleapis.com/auth/calendar.settings.readonly</code> — odczyt ustawień Kalendarza Google, takich jak strefa czasowa.</li>
+          </ul>
+          <p>Dodatek nie prosi o uprawnienie do tworzenia, usuwania, udostępniania ani modyfikowania samych kalendarzy.</p>
+        </section>
+
+        <section class="section" aria-labelledby="use-heading">
+          <h2 id="use-heading">Sposób użycia danych</h2>
+          <p>Dane Kalendarza Google są używane wyłącznie do działania funkcji dodatku:</p>
+          <ul>
+            <li>odczytywania wydarzeń przez NVDA,</li>
+            <li>pokazywania list wydarzeń w oknach dialogowych NVDA,</li>
+            <li>wyszukiwania wydarzeń według tekstu,</li>
+            <li>dodawania nowych wydarzeń,</li>
+            <li>edycji istniejących wydarzeń,</li>
+            <li>usuwania wybranych wydarzeń,</li>
+            <li>wyboru kalendarzy używanych przez dodatek.</li>
+          </ul>
+          <p>Dane nie są używane do reklam, analityki, profilowania ani innych celów niezwiązanych z działaniem dodatku.</p>
+        </section>
+
+        <section class="section" aria-labelledby="local-storage-heading">
+          <h2 id="local-storage-heading">Przechowywanie lokalne</h2>
+          <p>Google Calendar Manager przechowuje ustawienia i token logowania Google lokalnie na komputerze użytkownika, w katalogu konfiguracji użytkownika NVDA, w podkatalogu <code>googleCalendarManager</code>.</p>
+          <p>Typowe pliki lokalne:</p>
+          <ul>
+            <li><code>token.json</code> — token logowania OAuth Google,</li>
+            <li><code>settings.json</code> — wybrane kalendarze i ustawienia dodatku,</li>
+            <li><code>last_oauth_error.txt</code> — informacje diagnostyczne dotyczące błędów OAuth,</li>
+            <li><code>last_create_event_error.txt</code> — raport błędu tworzenia wydarzenia,</li>
+            <li><code>last_update_event_error.txt</code> — raport błędu edycji wydarzenia,</li>
+            <li><code>last_delete_event_error.txt</code> — raport błędu usuwania wydarzenia.</li>
+          </ul>
+          <p>Raporty błędów mogą zawierać techniczne informacje potrzebne do diagnozy. W zależności od rodzaju błędu mogą też zawierać dane wpisane w formularzu wydarzenia lub identyfikatory techniczne, na przykład tytuł, lokalizację, datę, godzinę, identyfikator kalendarza albo identyfikator wydarzenia.</p>
+          <p>Dodatek nie przechowuje danych Kalendarza Google na serwerze kontrolowanym przez autora.</p>
+        </section>
+
+        <section class="section" aria-labelledby="sharing-heading">
+          <h2 id="sharing-heading">Udostępnianie danych</h2>
+          <p>Google Calendar Manager nie sprzedaje, nie wynajmuje i nie udostępnia danych Kalendarza Google osobom trzecim.</p>
+          <p>Dodatek komunikuje się z usługami Google wyłącznie w zakresie potrzebnym do wykonania działań zleconych przez użytkownika. Nie wysyła danych kalendarza na serwery kontrolowane przez autora.</p>
+        </section>
+
+        <section class="section" aria-labelledby="human-access-heading">
+          <h2 id="human-access-heading">Dostęp autora do danych użytkownika</h2>
+          <p>Autor nie ma dostępu do danych Kalendarza Google użytkownika przez dodatek.</p>
+          <p>Jeśli użytkownik skontaktuje się z autorem w sprawie pomocy technicznej i dobrowolnie przekaże raport błędu, log, zrzut ekranu albo szczegóły wydarzenia, informacje te zostaną użyte wyłącznie do diagnozy zgłoszonego problemu.</p>
+        </section>
+
+        <section class="section" aria-labelledby="retention-heading">
+          <h2 id="retention-heading">Przechowywanie i usuwanie danych</h2>
+          <p>Token OAuth, ustawienia i raporty błędów pozostają lokalnie do czasu ich usunięcia przez użytkownika.</p>
+          <p>Użytkownik może usunąć lokalne dane dodatku przez skasowanie folderu <code>googleCalendarManager</code> z katalogu konfiguracji użytkownika NVDA.</p>
+          <p>Dostęp dodatku do konta Google można w każdej chwili cofnąć w ustawieniach bezpieczeństwa konta Google, w sekcji dostępu aplikacji innych firm.</p>
+        </section>
+
+        <section class="section" aria-labelledby="limited-use-heading">
+          <h2 id="limited-use-heading">Ograniczone użycie danych</h2>
+          <p>Sposób użycia i przekazywania informacji otrzymanych z interfejsów API Google przez Google Calendar Manager będzie zgodny z Google API Services User Data Policy, w tym z wymaganiami Limited Use.</p>
+        </section>
+
+        <section class="section" aria-labelledby="contact-heading">
+          <h2 id="contact-heading">Kontakt</h2>
+          <p>Autor: Piotr Tarasewicz.</p>
+          <p>W sprawach dotyczących prywatności można napisać na adres <a href="mailto:piotrktarasewicz@gmail.com">piotrktarasewicz@gmail.com</a> albo przejść do strony <a href="../../contact.html">Kontakt</a>.</p>
+          <p><a href="index.html">Wróć do opisu Google Calendar Manager</a>.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>PT Projects — Piotr Tarasewicz.</p>
+      <p class="small"><a href="../../privacy.html">Polityka prywatności strony</a> · <a href="../../terms.html">Warunki korzystania ze strony</a></p>
+    </div>
+  </footer>
+</body>
+</html>
