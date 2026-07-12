@@ -1,15 +1,15 @@
-# Odkryj WOMAI
+﻿# Odkryj WOMAI
 
 Statyczna aplikacja quizowa z panelem administratora.
 
 ## Publiczne adresy
 
-Te ścieżki są celowo zachowane:
+Te Ĺ›cieĹĽki sÄ… celowo zachowane:
 
-- `/odkryj-womai/` — panel gościa, niezabezpieczony przez Cloudflare.
-- `/odkryj-womai/admin/` — panel administratora, zabezpieczony przez Cloudflare Access.
+- `/odkryj-womai/` â€” panel goĹ›cia, niezabezpieczony przez Cloudflare.
+- `/odkryj-womai/admin/` â€” panel administratora, zabezpieczony przez Cloudflare Access.
 
-Nie przenoś plików `odkryj-womai/index.html` ani `odkryj-womai/admin/index.html`, jeśli obecne adresy mają dalej działać bez przekierowań.
+Nie przenoĹ› plikĂłw `odkryj-womai/index.html` ani `odkryj-womai/admin/index.html`, jeĹ›li obecne adresy majÄ… dalej dziaĹ‚aÄ‡ bez przekierowaĹ„.
 
 ## Struktura
 
@@ -40,40 +40,51 @@ Endpoint Google Apps Script jest ustawiony w:
 js/config.js
 ```
 
-Kolory i podstawowe zmienne wyglądu są w:
+Kolory i podstawowe zmienne wyglÄ…du sÄ… w:
 
 ```text
 css/theme.css
 ```
 
-Gdy będzie gotowa docelowa identyfikacja wizualna, najpierw zmień zmienne w `theme.css`, a dopiero potem szczegóły w `guest.css` i `admin.css`.
+Gdy bÄ™dzie gotowa docelowa identyfikacja wizualna, najpierw zmieĹ„ zmienne w `theme.css`, a dopiero potem szczegĂłĹ‚y w `guest.css` i `admin.css`.
 
 ## Logo
 
-Panel gościa korzysta obecnie z prawdziwego pliku logo:
+Panel goĹ›cia korzysta obecnie z prawdziwego pliku logo:
 
 ```text
 assets/logo-womai-white.png
 ```
 
-Ten plik jest wczytywany w `odkryj-womai/index.html` przez element `img.brand-logo`. Jeśli logo ma zostać zmienione, najprościej podmienić plik `assets/logo-womai-white.png` na nową wersję o tej samej nazwie albo zmienić ścieżkę w `index.html`.
+Ten plik jest wczytywany w `odkryj-womai/index.html` przez element `img.brand-logo`. JeĹ›li logo ma zostaÄ‡ zmienione, najproĹ›ciej podmieniÄ‡ plik `assets/logo-womai-white.png` na nowÄ… wersjÄ™ o tej samej nazwie albo zmieniÄ‡ Ĺ›cieĹĽkÄ™ w `index.html`.
 
-Plik `assets/logo-placeholder.svg` może pozostać jako techniczny placeholder lub zapas dla miejsc, które nie mają jeszcze docelowego logo.
+Plik `assets/logo-placeholder.svg` moĹĽe pozostaÄ‡ jako techniczny placeholder lub zapas dla miejsc, ktĂłre nie majÄ… jeszcze docelowego logo.
 
-Panel administratora nadal używa klasy `brand-logo-placeholder`, więc jego nagłówek można później osobno dostosować do prawdziwego logo.
+Panel administratora nadal uĹĽywa klasy `brand-logo-placeholder`, wiÄ™c jego nagĹ‚Ăłwek moĹĽna pĂłĹşniej osobno dostosowaÄ‡ do prawdziwego logo.
 
-## Dostępność
+## DostÄ™pnoĹ›Ä‡
 
-Przy zmianach trzeba pilnować:
+Przy zmianach trzeba pilnowaÄ‡:
 
-- języka dokumentu `lang="pl"`,
-- prawdziwych przycisków `<button>`,
-- komunikatów `aria-live`,
-- kolejności fokusu,
+- jÄ™zyka dokumentu `lang="pl"`,
+- prawdziwych przyciskĂłw `<button>`,
+- komunikatĂłw `aria-live`,
+- kolejnoĹ›ci fokusu,
 - widocznego fokusu klawiatury,
-- kontrastu kolorów,
-- działania quizu bez myszy.
+- kontrastu kolorĂłw,
+- dziaĹ‚ania quizu bez myszy.
 
-## Bezpieczeństwo
+## BezpieczeĹ„stwo
 
-Cloudflare chroni ścieżkę `/odkryj-womai/admin/`, ale backend Apps Script nadal musi sprawdzać token i rolę dla każdej operacji administracyjnej. Publiczne `action=guest` powinno zwracać wyłącznie dane przeznaczone dla gościa.
+Cloudflare chroni Ĺ›cieĹĽkÄ™ `/odkryj-womai/admin/`, ale backend Apps Script nadal musi sprawdzaÄ‡ token i rolÄ™ dla kaĹĽdej operacji administracyjnej. Publiczne `action=guest` powinno zwracaÄ‡ wyĹ‚Ä…cznie dane przeznaczone dla goĹ›cia.
+
+## Publikacja
+
+Docelowe publiczne adresy pozostajÄ… bez zmian:
+
+https://ptprojects.app/odkryj-womai
+https://ptprojects.app/odkryj-womai/admin
+
+To repo jest ĹşrĂłdĹ‚em aplikacji. Publiczna kopia aplikacji ma trafiaÄ‡ do katalogu `odkryj-womai/` w repozytorium `ptprojects`.
+
+Nie zmieniaj Ĺ›cieĹĽek publicznych bez Ĺ›wiadomej decyzji, bo mogÄ… byÄ‡ uĹĽywane w QR-kodach i w konfiguracji Cloudflare Access.
