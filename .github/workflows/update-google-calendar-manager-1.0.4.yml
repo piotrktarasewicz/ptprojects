@@ -61,7 +61,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
           git rm .github/workflows/update-google-calendar-manager-1.0.4.yml
           git add projects/google-calendar-manager/index.html projects.html projects/google-calendar-manager/terms.html
           git commit -m "Update Google Calendar Manager pages for 1.0.4"
