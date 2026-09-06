@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessible Weather - PT Projects</title>
+  <meta name="description" content="Accessible Weather to prosta aplikacja pogodowa na iOS i Androida, projektowana od początku dla użytkowników VoiceOver i TalkBack.">
+  <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Przejdź do treści</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="branding">
+        <a class="site-logo-link" href="../../index.html" aria-label="PT Projects — strona główna">
+          <img class="site-logo" src="../../assets/img/logo-pt-projects.png" alt="">
+        </a>
+        <p class="site-tagline">trochę projektów, coś o dostępności i nieco moich dźwięków</p>
+      </div>
+      <nav aria-label="Główne menu">
+        <ul>
+          <li><a href="../../index.html">Start</a></li>
+          <li><a href="../../about.html">O mnie</a></li>
+          <li><a href="../../projects.html" aria-current="page">Projekty</a></li>
+          <li><a href="../../posts/index.html">Wpisy</a></li>
+          <li><a href="../../music.html">Muzyka</a></li>
+          <li><a href="../../accessibility.html">Dostępność</a></li>
+          <li><a href="../../contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="content">
+      <article>
+        <h1>Accessible Weather</h1>
+        <p class="meta">Aplikacja pogodowa na iOS i Androida — obecnie w zamkniętych testach</p>
+
+        <section class="notice" aria-labelledby="test-status-heading">
+          <h2 id="test-status-heading">Status projektu</h2>
+          <p>Wersja na iPhone'a jest obecnie sprawdzana przez niewielką grupę testerów w TestFlight. Testowana wersja działa stabilnie, poprawnie pobiera prognozy i wyświetla ostrzeżenia pogodowe.</p>
+          <p>Aplikacja nie jest jeszcze publicznie dostępna do pobrania. Przed publikacją zostanie dodatkowo sprawdzona na fizycznym urządzeniu z Androidem.</p>
+        </section>
+
+        <section class="section" aria-labelledby="purpose-heading">
+          <h2 id="purpose-heading">Do czego służy aplikacja</h2>
+          <p>Accessible Weather przekazuje najważniejsze informacje pogodowe w prostej, tekstowej formie. Powstała przede wszystkim z myślą o osobach korzystających z czytników ekranu, ale jej przejrzysty układ ma być wygodny dla każdego.</p>
+          <p>Zamiast wykresów wymagających wzrokowej interpretacji aplikacja udostępnia zrozumiałe komunikaty, rozwijane prognozy i jasno opisane elementy sterujące.</p>
+        </section>
+
+        <section class="section" aria-labelledby="features-heading">
+          <h2 id="features-heading">Najważniejsze możliwości</h2>
+          <ul>
+            <li>bieżąca pogoda w krótkiej albo szczegółowej formie,</li>
+            <li>prognoza godzinowa na najbliższe 24 godziny,</li>
+            <li>prognoza dzienna i godzinowa na jutro oraz pojutrze,</li>
+            <li>automatyczne ustalanie bieżącej lokalizacji,</li>
+            <li>wyszukiwanie i zapisywanie wybranych miejscowości,</li>
+            <li>ostrzeżenia pogodowe wraz z opisem i zaleceniami,</li>
+            <li>opcjonalne powiadomienia o ostrzeżeniach, opadach i codziennej prognozie,</li>
+            <li>ustawienia pozwalające ograniczyć albo rozszerzyć zakres odczytywanych informacji.</li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="accessibility-heading">
+          <h2 id="accessibility-heading">Dostępność</h2>
+          <p>Aplikacja jest projektowana i regularnie testowana z VoiceOver na iPhonie. Obsługa TalkBack na Androidzie jest częścią zaplanowanych testów przed publikacją.</p>
+          <p>Nagłówki, przyciski i rozwijane sekcje mają jednoznaczne etykiety oraz stany przekazywane czytnikowi ekranu. Komunikaty pogodowe są układane tak, aby dało się szybko dotrzeć do potrzebnej informacji bez odsłuchiwania zbędnych elementów.</p>
+        </section>
+
+        <section class="section" aria-labelledby="sources-heading">
+          <h2 id="sources-heading">Źródła danych pogodowych</h2>
+          <p>Podstawowym źródłem prognoz i ostrzeżeń jest Google Weather API. Gdy usługa Google nie odpowiada, serwer może pobrać całą prognozę z Apple WeatherKit. Wyszukiwanie miejscowości korzysta z usługi Open-Meteo.</p>
+          <p>Źródło faktycznie użyte dla danej prognozy jest wyświetlane bezpośrednio w aplikacji. Wymagana atrybucja danych Google jest prezentowana jako „Google Maps”.</p>
+        </section>
+
+        <section class="section" aria-labelledby="privacy-heading">
+          <h2 id="privacy-heading">Prywatność</h2>
+          <p>Accessible Weather nie wymaga konta, nie wyświetla reklam i nie korzysta z narzędzi analitycznych ani mechanizmów śledzenia użytkownika. Dostęp do lokalizacji i powiadomień wymaga zgody użytkownika.</p>
+          <p><a href="https://accessible-weather-api-production.up.railway.app/privacy" rel="noopener noreferrer">Przeczytaj politykę prywatności Accessible Weather</a>.</p>
+        </section>
+
+        <section class="section" aria-labelledby="author-heading">
+          <h2 id="author-heading">Autor i kontakt</h2>
+          <p>Autorem Accessible Weather jest Piotr Tarasewicz. Projekt rozwijam po godzinach, łącząc własne doświadczenie korzystania z czytników ekranu z praktycznymi testami aplikacji mobilnych.</p>
+          <p>W sprawie projektu można przejść do strony <a href="../../contact.html">Kontakt</a>.</p>
+        </section>
+
+        <section class="section" aria-labelledby="safety-heading">
+          <h2 id="safety-heading">Ważne</h2>
+          <p>Prognoza pogody nie powinna być jedynym źródłem informacji w sytuacji zagrożenia. Accessible Weather nie jest przeznaczona do zastosowań ratunkowych ani ratujących życie.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>PT Projects — Piotr Tarasewicz.</p>
+      <p class="small"><a href="../../privacy.html">Polityka prywatności strony</a> · <a href="../../terms.html">Warunki korzystania ze strony</a></p>
+    </div>
+  </footer>
+</body>
+</html>
