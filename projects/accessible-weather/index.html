@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Accessible Weather - PT Projects</title>
-  <meta name="description" content="Accessible Weather to prosta aplikacja pogodowa na iOS i Androida, projektowana od początku dla użytkowników VoiceOver i TalkBack.">
+  <meta name="description" content="Accessible Weather: bezpłatna pogoda po polsku na iPhone’a, dostępna w App Store. Prognozy, ostrzeżenia, widżet i zaproszenie do testów na Androidzie.">
   <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -36,12 +36,13 @@
     <div class="content">
       <article>
         <h1>Accessible Weather</h1>
-        <p class="meta">Aplikacja pogodowa na iOS i Androida — obecnie w zamkniętych testach</p>
+        <p class="meta">iPhone: dostępna w App Store. Android: zbieram chętnych do zamkniętych testów.</p>
 
-        <section class="notice" aria-labelledby="test-status-heading">
-          <h2 id="test-status-heading">Status projektu</h2>
-          <p>Wersja na iPhone'a jest obecnie sprawdzana przez niewielką grupę testerów w TestFlight. Testowana wersja działa stabilnie, poprawnie pobiera prognozy i wyświetla ostrzeżenia pogodowe.</p>
-          <p>Aplikacja nie jest jeszcze publicznie dostępna do pobrania. Przed publikacją zostanie dodatkowo sprawdzona na fizycznym urządzeniu z Androidem.</p>
+        <section class="notice" aria-labelledby="download-heading">
+          <h2 id="download-heading">Pobierz na iPhone’a</h2>
+          <p>Accessible Weather jest już dostępna w App Store. Aplikacja jest bezpłatna, działa po polsku, nie wyświetla reklam i nie wymaga zakładania konta. Pobieranie aktualnej pogody wymaga połączenia z internetem.</p>
+          <p><a href="https://apps.apple.com/app/accessible-weather/id6803832261" rel="noopener noreferrer">Pobierz Accessible Weather z App Store</a></p>
+          <p class="small">Aktualizacja 1.0.3, dostępna <time datetime="2026-09-18">18 września 2026</time>, poprawia odświeżanie widżetu po otwarciu aplikacji oraz jego działanie przy czasowej niedostępności podstawowego źródła prognozy.</p>
         </section>
 
         <section class="section" aria-labelledby="purpose-heading">
@@ -56,18 +57,26 @@
             <li>bieżąca pogoda w krótkiej albo szczegółowej formie,</li>
             <li>prognoza godzinowa na najbliższe 24 godziny,</li>
             <li>prognoza dzienna i godzinowa na jutro oraz pojutrze,</li>
-            <li>automatyczne ustalanie bieżącej lokalizacji,</li>
+            <li>ustalanie bieżącej lokalizacji po udzieleniu zgody albo ręczny wybór miejscowości,</li>
             <li>wyszukiwanie i zapisywanie wybranych miejscowości,</li>
-            <li>ostrzeżenia pogodowe wraz z opisem i zaleceniami,</li>
+            <li>ostrzeżenia pogodowe z okresem obowiązywania, jeśli są dostępne dla wybranej lokalizacji,</li>
             <li>opcjonalne powiadomienia o ostrzeżeniach, opadach i codziennej prognozie,</li>
+            <li>widżet na ekranie głównym z bieżącą pogodą i prognozą na dziś, jutro oraz pojutrze,</li>
             <li>ustawienia pozwalające ograniczyć albo rozszerzyć zakres odczytywanych informacji.</li>
           </ul>
         </section>
 
         <section class="section" aria-labelledby="accessibility-heading">
           <h2 id="accessibility-heading">Dostępność</h2>
-          <p>Aplikacja jest projektowana i regularnie testowana z VoiceOver na iPhonie. Obsługa TalkBack na Androidzie jest częścią zaplanowanych testów przed publikacją.</p>
+          <p>Obsługa aplikacji została przetestowana z VoiceOver na iPhonie oraz z TalkBack na telefonie Samsung z Androidem.</p>
           <p>Nagłówki, przyciski i rozwijane sekcje mają jednoznaczne etykiety oraz stany przekazywane czytnikowi ekranu. Komunikaty pogodowe są układane tak, aby dało się szybko dotrzeć do potrzebnej informacji bez odsłuchiwania zbędnych elementów.</p>
+        </section>
+
+        <section class="section" id="android-tests" aria-labelledby="android-tests-heading">
+          <h2 id="android-tests-heading">Android — zapraszam do zamkniętych testów</h2>
+          <p>Przygotowuję wydanie Accessible Weather w Google Play i zbieram osoby chętne do udziału w zamkniętych testach. Wersja na Androida nie jest jeszcze dostępna publicznie w tym sklepie.</p>
+          <p>Jeśli korzystasz z Androida i chcesz pomóc sprawdzić aplikację w codziennym użyciu, napisz do mnie. Przekażę szczegóły, pomogę dołączyć do testów i chętnie przyjmę Twoje uwagi, także dotyczące obsługi z TalkBack.</p>
+          <p><a href="mailto:piotrktarasewicz@gmail.com?subject=Testy%20Accessible%20Weather%20na%20Androidzie">Zgłoś chęć testowania Accessible Weather na Androidzie</a></p>
         </section>
 
         <section class="section" aria-labelledby="sources-heading">

@@ -8,6 +8,7 @@ https://ptprojects.app
 
 Najważniejsze katalogi publikacyjne:
 
+- `projects/accessible-weather/` — opis Accessible Weather, pobieranie z App Store i zaproszenie do zamkniętych testów na Androidzie,
 - `projects/google-calendar-manager/` — strona projektu Google Calendar Manager dla NVDA,
 - `projects/google-calendar-reader/` — przekierowanie ze starego adresu projektu,
 - `odkryj-womai/` — publiczna wersja aplikacji Odkryj WOMAI,
