@@ -104,6 +104,7 @@ Prosty kontakt mailowy i link do profilu GitHub. Bez formularza kontaktowego, ż
 - dodano sekcję `#android-tests` oraz link mailowy do zgłoszenia chęci udziału w testach,
 - zachowano dotychczasowy układ strony, nawigację i style; użyto opisowych linków i nazwanych sekcji,
 - dodano katalog Accessible Weather do README.
+- na prośbę Piotrka ułożono początek strony projektu w kolejności: „Do czego służy aplikacja”, pobieranie i aktualizacja iOS, zaproszenie do testów Androida; status dostępności przeniesiono pod opis aplikacji.
 
 ### 2026-04-24
 
