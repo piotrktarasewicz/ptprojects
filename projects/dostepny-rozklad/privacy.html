@@ -36,11 +36,11 @@
     <div class="content">
       <article>
         <h1>Polityka prywatności aplikacji Dostępny Rozkład</h1>
-        <p class="meta">Data obowiązywania: 27 września 2026 r.</p>
+        <p class="meta">Data obowiązywania: 8 listopada 2026 r.</p>
 
         <section class="section" aria-labelledby="summary-heading">
           <h2 id="summary-heading">Najważniejsze w skrócie</h2>
-          <p>Dostępny Rozkład nie wymaga konta, nie wyświetla reklam i nie korzysta z analityki ani śledzenia użytkownika. Lokalizacja telefonu jest używana tylko na urządzeniu i nie trafia na serwer.</p>
+          <p>Dostępny Rozkład nie wymaga konta, nie wyświetla reklam i nie korzysta z analityki ani śledzenia użytkownika. Lokalizacja telefonu jest używana na urządzeniu. Na serwer trafia tylko przy prowadzeniu pieszo do przystanku, żeby wyznaczyć trasę, i nie jest tam zapisywana.</p>
         </section>
 
         <section class="section" aria-labelledby="location-heading">
@@ -49,14 +49,16 @@
           <ul>
             <li>pokazać najbliższe przystanki,</li>
             <li>wybrać najbliższy przystanek w wyszukiwaniu połączeń,</li>
-            <li>zapowiadać przystanki podczas podróży.</li>
+            <li>zapowiadać przystanki podczas podróży,</li>
+            <li>prowadzić pieszo do wybranego przystanku.</li>
           </ul>
-          <p>Podczas podróży lokalizacja działa także przy zablokowanym telefonie, ale tylko do zakończenia podróży. Współrzędne są przetwarzane wyłącznie w telefonie i nie są wysyłane do serwera. Po zakończeniu podróży dane o trasie użytkownika są usuwane z pamięci aplikacji.</p>
+          <p>Podczas podróży lokalizacja działa także przy zablokowanym telefonie, ale tylko do zakończenia podróży. Współrzędne z podróży są przetwarzane wyłącznie w telefonie i nie są wysyłane do serwera. Po zakończeniu podróży dane o trasie użytkownika są usuwane z pamięci aplikacji.</p>
+          <p>Przy prowadzeniu pieszo aplikacja wysyła do serwera bieżące położenie telefonu i wybrany przystanek: na początku prowadzenia i ponownie, gdy po zejściu z trasy trzeba wyznaczyć nową. Serwer używa położenia tylko do wyznaczenia trasy w tym jednym zapytaniu i nie zapisuje go, także w dziennikach. W czasie marszu położenie jest dalej przetwarzane tylko w telefonie.</p>
         </section>
 
         <section class="section" aria-labelledby="server-heading">
           <h2 id="server-heading">Co trafia na serwer aplikacji</h2>
-          <p>Aby pobrać rozkład, odjazdy albo wyszukać połączenie, aplikacja wysyła do serwera zapytanie zawierające numer przystanku, linii lub kursu albo przystanki początkowy i końcowy oraz godzinę. Zapytania nie zawierają lokalizacji ani danych osobowych, a serwer nie prowadzi dziennika zapytań.</p>
+          <p>Aby pobrać rozkład, odjazdy albo wyszukać połączenie, aplikacja wysyła do serwera zapytanie zawierające numer przystanku, linii lub kursu albo przystanki początkowy i końcowy oraz godzinę. Zapytania nie zawierają danych osobowych, a lokalizację zawiera tylko opisane wyżej zapytanie o trasę pieszą. Serwer nie prowadzi dziennika zapytań.</p>
           <p>Serwer działa w usłudze hostingowej Railway. Jak każdy dostawca hostingu, może ona przetwarzać podstawowe dane techniczne połączenia, na przykład adres IP.</p>
         </section>
 
@@ -65,7 +67,7 @@
           <p>Powiadomienia są opcjonalne i działają tylko po ich włączeniu. Wtedy serwer zapisuje:</p>
           <ul>
             <li>losowy identyfikator instalacji aplikacji,</li>
-            <li>token powiadomień, który umożliwia ich dostarczenie za pośrednictwem usług Expo i Apple.</li>
+            <li>token powiadomień, który umożliwia ich dostarczenie za pośrednictwem usług Expo oraz Apple na iPhonie albo Google (Firebase) na Androidzie.</li>
           </ul>
           <p>Po wyłączeniu powiadomień token jest usuwany z serwera.</p>
         </section>
@@ -77,7 +79,7 @@
 
         <section class="section" aria-labelledby="report-heading">
           <h2 id="report-heading">Raport testowy podróży</h2>
-          <p>W wersji testowej aplikacja może zapisać w telefonie raport z ostatniej podróży: godziny, przystanki i stan pojazdu, bez lokalizacji użytkownika. Raport opuszcza telefon tylko wtedy, gdy użytkownik sam go wyśle.</p>
+          <p>W wersji testowej aplikacja może zapisać w telefonie raport z ostatniej podróży: godziny, przystanki i stan pojazdu, bez lokalizacji użytkownika. Podobnie raport z prowadzenia pieszo: przystanek docelowy, kroki trasy, wypowiedziane komunikaty i odległości przebyte wzdłuż trasy, bez współrzędnych. Raport opuszcza telefon tylko wtedy, gdy użytkownik sam go wyśle.</p>
         </section>
 
         <section class="section" aria-labelledby="children-heading">

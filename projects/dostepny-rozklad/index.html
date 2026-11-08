@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dostępny Rozkład - PT Projects</title>
-  <meta name="description" content="Dostępny Rozkład: dostępny rozkład jazdy komunikacji miejskiej w Krakowie dla osób korzystających z czytników ekranu. Aplikacja w fazie testów na iPhonie.">
+  <meta name="description" content="Dostępny Rozkład: dostępny rozkład jazdy komunikacji miejskiej w Krakowie i okolicach dla osób korzystających z czytników ekranu. Aplikacja w fazie testów na iPhonie i Androidzie.">
   <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -39,12 +39,12 @@
 
         <section class="section" aria-labelledby="purpose-heading">
           <h2 id="purpose-heading">Do czego służy aplikacja</h2>
-          <p>Dostępny Rozkład to rozkład jazdy komunikacji miejskiej w Krakowie, tworzony z myślą o osobach korzystających z czytników ekranu. Pokazuje najbliższe odjazdy z przystanków, rozkłady linii, komunikaty ZTP i wyszukuje połączenia z przesiadkami, a podczas jazdy mówi, gdzie jest pojazd i kiedy wysiadać.</p>
+          <p>Dostępny Rozkład to rozkład jazdy komunikacji miejskiej w Krakowie i gminach aglomeracji ZTP, tworzony z myślą o osobach korzystających z czytników ekranu. Pokazuje najbliższe odjazdy z przystanków, rozkłady linii, komunikaty ZTP i wyszukuje połączenia z przesiadkami, a podczas jazdy mówi, gdzie jest pojazd, kiedy wysiadać i gdzie się przesiąść.</p>
         </section>
 
         <section class="notice" aria-labelledby="status-heading">
           <h2 id="status-heading">Etap testów</h2>
-          <p>Aplikacja jest w fazie testów na iPhonie i nie jest jeszcze dostępna w App Store. Testuję ją w codziennych przejazdach, a wkrótce sprawdzą ją też zaproszone osoby przez TestFlight.</p>
+          <p>Aplikacja jest w fazie testów na iPhonie i Androidzie. Nie ma jej jeszcze w App Store ani w Google Play. Testuję ją w codziennych przejazdach, a zaproszone osoby sprawdzają ją przez TestFlight na iPhonie i z pliku instalacyjnego na Androidzie.</p>
         </section>
 
         <section class="section" aria-labelledby="features-heading">
@@ -53,26 +53,36 @@
             <li>najbliższe odjazdy z uwzględnieniem danych na żywo, jeśli są dostępne,</li>
             <li>najbliższe przystanki według lokalizacji, po udzieleniu zgody,</li>
             <li>rozkład całego dnia i trasy linii,</li>
-            <li>wyszukiwanie połączeń z jedną lub dwiema przesiadkami, z czasem na przejście między przystankami,</li>
+            <li>wyszukiwanie połączeń z jedną lub dwiema przesiadkami, z czasem na przejście między przystankami, i zapisane wyszukiwania,</li>
             <li>prowadzenie podróży z zapowiedziami głosowymi, także przy zablokowanym telefonie i, po włączeniu tej opcji, podczas rozmowy telefonicznej,</li>
-            <li>ulubione przystanki, linie i zapisane podróże,</li>
-            <li>komunikaty ZTP i opcjonalne powiadomienia o nich.</li>
+            <li>prowadzenie przez przesiadki: zapowiedź, gdzie wysiąść i do czego się przesiąść, a potem dalsza jazda następnym kursem,</li>
+            <li>własne dźwięki przystanku i celu, sygnał przed celem, wybór głosu, szybkości i głośności mowy,</li>
+            <li>podróż w tle: w czasie jazdy można korzystać z reszty aplikacji,</li>
+            <li>ulubione przystanki, linie, zapisane przejazdy i wyszukiwania,</li>
+            <li>praca bez zasięgu: rozkład ulubionych przystanków na dziś i jutro zapisany w telefonie,</li>
+            <li>komunikaty ZTP i opcjonalne powiadomienia o nich, w tym o utrudnieniach w ruchu tramwajów.</li>
           </ul>
+        </section>
+
+        <section class="section" aria-labelledby="walking-heading">
+          <h2 id="walking-heading">Testowane: prowadzenie pieszo do przystanku</h2>
+          <p>Na Androidzie testuję prowadzenie pieszo do wybranego słupka przystanku. Aplikacja mówi, jak iść, gdzie skręcić i jakie przejście jest przed tobą: przez jaką ulicę, czy ze światłami i czy z pasami, a na końcu, po której stronie jest przystanek. Trasy są wyznaczane na podstawie map OpenStreetMap. To wczesna wersja, sprawdzana na spacerach, i nie zastępuje białej laski, psa przewodnika ani własnej orientacji.</p>
         </section>
 
         <section class="section" aria-labelledby="accessibility-heading">
           <h2 id="accessibility-heading">Dostępność</h2>
-          <p>Aplikację projektuję i testuję z VoiceOver na iPhonie, w codziennym użyciu na ulicach Krakowa. Przejścia między przystankami przy przesiadkach są tam, gdzie to możliwe, sprawdzane w terenie przez osobę niewidomą.</p>
+          <p>Aplikację projektuję i testuję z VoiceOver na iPhonie i TalkBack na Androidzie, w codziennym użyciu na ulicach Krakowa. Przejścia między przystankami przy przesiadkach są tam, gdzie to możliwe, sprawdzane w terenie przez osobę niewidomą.</p>
         </section>
 
         <section class="section" aria-labelledby="sources-heading">
           <h2 id="sources-heading">Źródła danych</h2>
           <p>Rozkłady, dane na żywo i komunikaty pochodzą z otwartych danych Zarządu Transportu Publicznego w Krakowie (<a href="https://gtfs.ztp.krakow.pl/" rel="noopener noreferrer">gtfs.ztp.krakow.pl</a>). Aplikacja przetwarza je na potrzeby dostępnej prezentacji i nie jest oficjalną aplikacją ZTP.</p>
+          <p>Prowadzenie pieszo korzysta z danych mapy © współtwórcy <a href="https://www.openstreetmap.org/copyright" rel="noopener noreferrer">OpenStreetMap</a>, udostępnianych na licencji ODbL.</p>
         </section>
 
         <section class="section" aria-labelledby="privacy-heading">
           <h2 id="privacy-heading">Prywatność</h2>
-          <p>Dostępny Rozkład nie wymaga konta, nie wyświetla reklam i nie korzysta z narzędzi analitycznych. Lokalizacja telefonu nie jest wysyłana na serwer.</p>
+          <p>Dostępny Rozkład nie wymaga konta, nie wyświetla reklam i nie korzysta z narzędzi analitycznych. Lokalizacja telefonu trafia na serwer tylko przy prowadzeniu pieszo do przystanku, żeby wyznaczyć trasę, i nie jest tam zapisywana.</p>
           <p><a href="privacy.html">Przeczytaj politykę prywatności Dostępnego Rozkładu</a>.</p>
         </section>
 
